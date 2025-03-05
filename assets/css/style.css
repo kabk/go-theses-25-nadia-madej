@@ -10,13 +10,6 @@
   to generate your own font for the web from .ttf or .oft files 
 */
 
-@font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-roman.woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
 
 @font-face {
     font-family: 'Your Font Name';
@@ -26,26 +19,54 @@
     font-display: block;
 }
 
+@font-face {
+  font-family: 'Alice';
+  src: url('Alice-Regular.woff2') format('woff2'),
+      url('Alice-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Crimson';
+  src: url(CrimsonPro-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: italic;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Neco';
+  src: url(Neco-Regular.otf);
+  font-weight: normal;
+  font-style: italic;
+  font-display: block;
+}
 
 
+/*rgb(114, 58, 23)*/
 /* VARIABLES */
 
 :root {
   /* Color values */
-  --color-background: rgb(193, 255, 131);
-  --color-text: rgb(235, 22, 22);
-  --color-text-link: rgba(235, 22, 22);
-  --color-text-link-hover: rgba(0,0,255,0.4);
+  
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(110, 74, 65) );
+  --color-text:rgb(114, 58, 23);
+  --color-text-link: rgba(114, 58, 23);
+  --color-text-link-hover: rgba(61, 61, 177, 0.4);
   /* Font values */
-  --font-text: 'Your Font Name', 'Helvetica', 'Arial', sans-serif;
+  --font-text: 'Helvetica', 'Arial', sans-serif;
   --font-size: 24px;
   /* Margin value */
-  --margin: 3rem;
+  --margin: 10vw;
+  text-justify: auto;
 }
 
 
 
 /* GENERAL STYLES */
+
 
 html {
   font: var(--font-size) var(--font-family);
@@ -61,11 +82,14 @@ body {
   width:100%;
   height:auto;
   overflow-y:auto;
+  overflow-x:hidden;
 }
 
 a {
-  color: var(--color-text-link);
-  text-decoration: underline;
+  color: rgb(129, 168, 244);
+  text-decoration:wavy;
+  position: relative;
+  z-index: 2;
 }
 
 a:hover {
@@ -73,73 +97,201 @@ a:hover {
   text-decoration: underline;
 }
 
-
 h1{
-  font-size: 80px;
+  font-size: 20px;
+  font-family: 'Alice';
+  text-align:right;
 }
 
 h2{
-  font-size: 80px;
-  text-align: right;
+  font-size: 48px;
+  text-align: center;
+  font-family: 'Alice';
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }
 
 h3{
-  /* h3 style */
-}
+    font-size: 12px;
+      text-align: center;
+      font-family: 'Alice';
+     
+      text-decoration-thickness: 2px;
+      text-underline-offset: 10px;
+  }
 
-h4, h5, h6{
-  /* h4-h5-h6 style */
-}
 
 p{
-  font-size: 30px;
-  text-align: right;
+  font-size: 24px;
+  text-align: left;
+  font-family: 'Neco';
+  }
+
+  
+
+span{
+  display: inline;
 }
 
-ol, ul{
-  /* ordered list and unordered list styles */
+.links{
+  word-break: break-all;
 }
-
-blockquote{
-  /* blockquote element style */
-}
-
-hr{
-  /* horizontal rule style */
-}
-
-
-
-/* PAGE STYLES */
-
 /* page structure */
 
 div.page-wrapper {
   /* the element that 'wraps' everything */
-  padding: var(--margin);
+  padding-left: 350px;
+  padding-right: 6vw;
 }
 
 /* navigation */
  
 nav{
-  
+  position: fixed;
+  bottom: 2%;
+  left: 0%;
+  font-family: 'Alice';
+  font-size: 20px;
+  z-index: 3;
+  /* padding:5vw; */
 }
 
 /* content */
 
-main{
- 
+#abstract {
+  color: var(--color-text)
 }
 
-summary{
+#overlay {
+  position: absolute;
+  width: 100%;
+  min-width: 100%;
+  top: 0%;
+}
+
+#overlay tr {
+  height : 300px;
+  min-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-height : 22vw;
+  max-width: 22vw;
+  position: relative;
+  z-index: 1;
+  /* opacity: 70%; */
+}
+
+#show-hide {
+  position: fixed;
+  top: 420px;
+  left: 2vw;
+  background-color: transparent; 
+  border: solid;
+  border-radius: 50px;
+  color: rgb(114, 58, 23);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 20px;
+  
+}
+
+#title {
+  position: absolute;
+  left:14%;
+  margin-top: 1%;
+}
+
+.intro-wrapper{
+  height:150vh;
   
 }
 
 
+.from{
+			position: sticky;
+			border: none;
+			margin-top: 1%;
+      font-size: 8vw;
+      font-family: 'Alice';
+      text-align:left;
+      width:25vw;
+      max-height: 150px;
+      top: 0;
+      left: 2vw;
+}
+
+.Hand1{
+  position: sticky;
+  border: none;
+  font-size: 8vw;
+  font-family: 'Alice';
+  text-align:left;
+  width:25vw;
+  max-height: 150px;
+  top: 0;
+  left: 26vw;
+}
+
+.to{
+  position: sticky;
+  border: none;
+  font-size: 8vw;
+  font-family: 'Alice';
+  text-align:left;
+  width:25vw;
+  max-height: 150px;
+  top: 0;
+  left: 64vw;
+}
+
+.Hand2{
+  position: sticky;
+  border: none;
+  font-size: 8vw;
+  font-family: 'Alice';
+  text-align:left;
+  width:20vw;
+  max-height: 150px;
+  top: 0;
+  left: 79vw;
+}
+
+.thesis{
+  position: relative;
+  
+  text-align: center;
+}
+
+.figure {
+  max-width: unset !important;
+  max-height: unset !important;
+  width: 70%;
+  height: auto;
+  
+}
 
 
+.center {
+  display: block;
+  max-height : 25vw;
+  max-width: 25vw;
+}
 
-
+/* .empty{
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(216, 207, 205) );
+  position:sticky;
+  top: 0;
+  width: 100%;
+  height: 120px;
+} */
 /* UTILITY CLASSES */
 
 /* hide desktop mobile etc */
@@ -174,7 +326,7 @@ summary{
 @media (max-width: 779px) {
 
   /* your 'mobile' overriding css properties here */
-
+  
 
 
   /* utility classes, mobile */
@@ -187,7 +339,131 @@ summary{
     display:block;
   }
 
+  .intro-wrapper{
+    height:90vh;
+  }
+
+  h3{
+      font-size: 18px;
+      text-align: left;
+      font-family: 'Alice';
+      text-decoration-thickness: 2px;
+      text-underline-offset: 10px;
+  }
+
+  .table-of-content{
+    position: relative;
+    padding-top: 60px;
+    left: 2vw;
+  }
+
+  p{
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Neco';
+    }
+
+    h2{
+      font-size: 32px;
+      text-align: center;
+      font-family: 'Alice';
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 10px;
+    }
+  
+  nav{
+    position: relative;
+    top: 4vw;
+    left: 4vw;
+    text-align: center;
+    font-family: 'Alice';
+    font-size: 20px;
+    /* padding:5vw; */
+  }
+
+  div.page-wrapper {
+    /* the element that 'wraps' everything */
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  #show-hide {
+    position: fixed;
+    left : 50vw;
+    top: 88%;
+    background-color: white; 
+    border: solid;
+    border-radius: 50px;
+    color: rgb(114, 58, 23);
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transform: translateX(-50%);
+
+  }
+
+  img {
+    max-height : 20vw;
+    max-width: 20vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  .from{
+    position: sticky;
+    border: none;
+    margin-top: 1%;
+    font-size: 10vw;
+    font-family: 'Alice';
+    text-align:left;
+    width:25vw;
+    max-height: 150px;
+    top: 0;
+    left: 2vw;
 }
+
+.Hand1{
+position: sticky;
+border: none;
+font-size: 10vw;
+font-family: 'Alice';
+text-align:left;
+width:25vw;
+max-height: 150px;
+top: 0;
+left: 29vw;
+}
+
+.to{
+position: sticky;
+border: none;
+font-size: 10vw;
+font-family: 'Alice';
+text-align:left;
+width:25vw;
+max-height: 150px;
+top: 0;
+left: 62vw;
+}
+
+.Hand2{
+position: sticky;
+border: none;
+font-size: 10vw;
+font-family: 'Alice';
+text-align:left;
+width:20vw;
+max-height: 150px;
+top: 0;
+left: 75vw;
+}
+}
+
+
+  /* opacity: 60%;
 
 
 
@@ -196,6 +472,7 @@ summary{
 @media (max-width: 339px) {
 
   /* your overriding css properties here */
+
 
 }
 
