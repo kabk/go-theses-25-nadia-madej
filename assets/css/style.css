@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: 'Crimson';
-  src: url(CrimsonPro-VariableFont_wght.ttf);
+  src: url('../fonts/Crimson_Pro/CrimsonPro-Italic-VariableFont_wght.ttf');
   font-weight: normal;
   font-style: italic;
   font-display: block;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'Neco';
-  src: url(Neco-Regular.otf);
+  src: url('../fonts/Neco/Fonts/OTF/Neco-Regular.otf');
   font-weight: normal;
   font-style: italic;
   font-display: block;
@@ -326,7 +326,30 @@ img {
 @media (max-width: 779px) {
 
   /* your 'mobile' overriding css properties here */
+  @font-face {
+    font-family: 'Alice';
+    src: url('Alice-Regular.woff2') format('woff2'),
+        url('Alice-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   
+  @font-face {
+    font-family: 'Crimson';
+    src: url(CrimsonPro-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: 'Neco';
+    src: url(Neco-Regular.otf);
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+  }
 
 
   /* utility classes, mobile */
@@ -351,10 +374,18 @@ img {
       text-underline-offset: 10px;
   }
 
+  h4{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Neco';
+    text-decoration-thickness: 2px;
+    text-underline-offset: 10px;
+  }
+
   .table-of-content{
     position: relative;
     padding-top: 60px;
-    left: 2vw;
+    left: 0vw;
   }
 
   p{
@@ -391,12 +422,12 @@ img {
   #show-hide {
     position: fixed;
     left : 50vw;
-    top: 88%;
+    top: 85%;
     background-color: white; 
     border: solid;
     border-radius: 50px;
     color: rgb(114, 58, 23);
-    padding: 20px 40px;
+    padding: 20px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
