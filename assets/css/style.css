@@ -57,7 +57,7 @@
   --color-text-link: rgba(114, 58, 23);
   --color-text-link-hover: rgba(61, 61, 177, 0.4);
   /* Font values */
-  --font-text: 'Helvetica', 'Arial', 'Alice', 'Crimson', 'Neco', sans-serif;
+  --font-text: 'Helvetica', 'Arial', 'Alicja', 'Crimsonian', 'Neconian', sans-serif;
   --font-size: 24px;
   /* Margin value */
   --margin: 10vw;
@@ -100,14 +100,14 @@ a:hover {
 
 h1{
   font-size: 20px;
-  font-family: 'Alice';
+  font-family: 'Alicja';
   text-align:right;
 }
 
 h2{
   font-size: 48px;
   text-align: center;
-  font-family: 'Alice';
+  font-family: 'Alicja';
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
@@ -116,7 +116,7 @@ h2{
 h3{
     font-size: 12px;
       text-align: center;
-      font-family: 'Alice';
+      font-family: 'Alicja';
      
       text-decoration-thickness: 2px;
       text-underline-offset: 10px;
@@ -126,7 +126,7 @@ h3{
 p{
   font-size: 24px;
   text-align: left;
-  font-family: 'Neco';
+  font-family: 'Neconian';
   }
 
   
@@ -152,7 +152,7 @@ nav{
   position: fixed;
   bottom: 2%;
   left: 0%;
-  font-family: 'Alice';
+  font-family: 'Alicja';
   font-size: 20px;
   z-index: 3;
   /* padding:5vw; */
@@ -221,7 +221,7 @@ img {
 			border: none;
 			margin-top: 1%;
       font-size: 8vw;
-      font-family: 'Alice';
+      font-family: 'Alicja';
       text-align:left;
       width:25vw;
       max-height: 150px;
@@ -233,7 +233,7 @@ img {
   position: sticky;
   border: none;
   font-size: 8vw;
-  font-family: 'Alice';
+  font-family: 'Alicja';
   text-align:left;
   width:25vw;
   max-height: 150px;
@@ -245,7 +245,7 @@ img {
   position: sticky;
   border: none;
   font-size: 8vw;
-  font-family: 'Alice';
+  font-family: 'Alicja';
   text-align:left;
   width:25vw;
   max-height: 150px;
@@ -257,7 +257,7 @@ img {
   position: sticky;
   border: none;
   font-size: 8vw;
-  font-family: 'Alice';
+  font-family: 'Alicja';
   text-align:left;
   width:20vw;
   max-height: 150px;
@@ -347,7 +347,7 @@ img {
   h3{
       font-size: 18px;
       text-align: left;
-      font-family: 'Alice';
+      font-family: 'Alicja';
       text-decoration-thickness: 2px;
       text-underline-offset: 10px;
   }
@@ -355,7 +355,7 @@ img {
   h4{
     font-size: 20px;
     text-align: center;
-    font-family: 'Neco';
+    font-family: 'Neconian';
     text-decoration-thickness: 2px;
     text-underline-offset: 10px;
   }
@@ -369,13 +369,13 @@ img {
   p{
     font-size: 20px;
     text-align: left;
-    font-family: 'Neco';
+    font-family: 'Neconian';
     }
 
     h2{
       font-size: 32px;
       text-align: center;
-      font-family: 'Alice';
+      font-family: 'Alicja';
       text-decoration: underline;
       text-decoration-thickness: 2px;
       text-underline-offset: 10px;
@@ -386,7 +386,7 @@ img {
     top: 4vw;
     left: 4vw;
     text-align: center;
-    font-family: 'Alice';
+    font-family: 'Alicja';
     font-size: 20px;
     /* padding:5vw; */
   }
@@ -426,7 +426,7 @@ img {
     border: none;
     margin-top: 1%;
     font-size: 10vw;
-    font-family: 'Alice';
+    font-family: 'Alicja';
     text-align:left;
     width:25vw;
     max-height: 150px;
@@ -438,7 +438,7 @@ img {
 position: sticky;
 border: none;
 font-size: 10vw;
-font-family: 'Alice';
+font-family: 'Alicja';
 text-align:left;
 width:25vw;
 max-height: 150px;
@@ -450,7 +450,7 @@ left: 29vw;
 position: sticky;
 border: none;
 font-size: 10vw;
-font-family: 'Alice';
+font-family: 'Alicja';
 text-align:left;
 width:25vw;
 max-height: 150px;
@@ -462,7 +462,7 @@ left: 62vw;
 position: sticky;
 border: none;
 font-size: 10vw;
-font-family: 'Alice';
+font-family: 'Alicja';
 text-align:left;
 width:20vw;
 max-height: 150px;
