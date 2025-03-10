@@ -12,33 +12,26 @@
 
 
 @font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-italic.woff2');
+    font-family: 'Alicja';
+    src: url('../fonts/Alicja/Alice-Regular.woff');
     font-weight: normal;
     font-style: italic;
     font-display: block;
 }
 
-@font-face {
-  font-family: 'Alice';
-  src: url('Alice-Regular.woff2') format('woff2'),
-      url('Alice-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 @font-face {
-  font-family: 'Crimson';
-  src: url('../fonts/Crimson_Pro/CrimsonPro-Italic-VariableFont_wght.ttf');
+  font-family: 'Crimsonian';
+  src: url('../fonts/Crimsonian/CrimsonPro-Italic-VariableFont_wght.ttf');
   font-weight: normal;
   font-style: italic;
   font-display: block;
 }
 
 @font-face {
-  font-family: 'Neco';
-  src: url('../fonts/Neco/Fonts/OTF/Neco-Regular.otf');
+  font-family: 'Neconian';
+  src: url('../fonts/Neconian/Fonts/OTF/Neco-Italic.otf');
   font-weight: normal;
   font-style: italic;
   font-display: block;
@@ -326,30 +319,7 @@ img {
 @media (max-width: 779px) {
 
   /* your 'mobile' overriding css properties here */
-  @font-face {
-    font-family: 'Alice';
-    src: url('Alice-Regular.woff2') format('woff2'),
-        url('Alice-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Crimson';
-    src: url(CrimsonPro-VariableFont_wght.ttf);
-    font-weight: normal;
-    font-style: italic;
-    font-display: block;
-  }
-  
-  @font-face {
-    font-family: 'Neco';
-    src: url(Neco-Regular.otf);
-    font-weight: normal;
-    font-style: italic;
-    font-display: block;
-  }
+ 
 
 
   /* utility classes, mobile */
@@ -437,8 +407,8 @@ img {
   }
 
   img {
-    max-height : 20vw;
-    max-width: 20vw;
+    max-height : 23vw;
+    max-width: 23vw;
     position: relative;
     z-index: 1;
   }
