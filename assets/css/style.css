@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'Alicja';
-    src: url('../fonts/Alicja/Alice-Regular.woff');
+    src: url('../fonts/Alice/Alice-Regular.woff');
     font-weight: normal;
     font-style: italic;
     font-display: block;
@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: 'Crimsonian';
-  src: url('../fonts/Crimsonian/CrimsonPro-Italic-VariableFont_wght.ttf');
+  src: url('../fonts/Crimson/CrimsonPro-Italic-VariableFont_wght.ttfx');
   font-weight: normal;
   font-style: italic;
   font-display: block;
@@ -31,7 +31,7 @@
 
 @font-face {
   font-family: 'Neconian';
-  src: url('../fonts/Neconian/Fonts/OTF/Neco-Italic.otf');
+  src: url('../fonts/Neco/Fonts/WEB/fonts/Neco-Italic.woff2');
   font-weight: normal;
   font-style: italic;
   font-display: block;
@@ -39,7 +39,7 @@
 
 @font-face {
   font-family: 'Neconian';
-  src: url('../fonts/Neconian/Fonts/OTF/Neco-Regular.otf');
+  src: url('../fonts/Neco/Fonts/WEB/fonts/Neco-Regular.woff2');
   font-weight: normal;
   font-style: italic;
   font-display: block;
