@@ -57,7 +57,7 @@
   --color-text-link: rgba(114, 58, 23);
   --color-text-link-hover: rgba(61, 61, 177, 0.4);
   /* Font values */
-  --font-text: 'Helvetica', 'Arial', 'Alicja', 'Crimsonian', 'Neconian', sans-serif;
+  --font-text: 'Alicja', 'Crimsonian', 'Neconian', 'Helvetica', 'Arial', sans-serif;
   --font-size: 24px;
   /* Margin value */
   --margin: 10vw;
