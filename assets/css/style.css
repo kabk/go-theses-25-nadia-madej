@@ -13,10 +13,11 @@
 
 @font-face {
     font-family: 'Alicja';
-    src: url('../fonts/Alice/Alice-Regular.woff');
+    src: url('../fonts/Alice/Alice-Regular.woff2');
     font-weight: normal;
     font-style: normal;
     font-display: block;
+    letter-spacing: 0;
 }
 
 
